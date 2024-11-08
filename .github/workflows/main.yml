@@ -13,7 +13,7 @@ jobs:
       - name: Contrução da Imagem Docker
         run: echo "Executando o comando Docker build"
       - name: Envio da Imagem Docker
-          run: echo "Executando o comando Docker Push"
+        run: echo "Executando o comando Docker Push"
   cd:
     runs-on: ubuntu-latest
     steps:
