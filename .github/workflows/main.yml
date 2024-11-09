@@ -22,8 +22,10 @@ jobs:
         with:
           context: ./src
           push: true
-          file: 
-          tags: user/app:latest
+          file: ./src/Dockerfile
+          tags: |
+            melquifilho/fake-shop:latest
+            melquifilho/fake-shop:v${{ github.run_number }}
 
   cd:
     runs-on: ubuntu-latest
